@@ -1,0 +1,200 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4ac0ff !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4ac0ff !important;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #283c86); /* Black to blue gradient */
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Video details styling */
+.container {
+    margin-top: 20px;
+    max-width: 1000px;
+}
+
+/* Video player section */
+.video-details {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.video-details h2 {
+    font-size: 26px;
+    color: #4ac0ff;
+    margin-bottom: 10px;
+}
+
+.video-details .description {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.video-details .video-player {
+    margin-bottom: 20px;
+}
+
+.video-details .like-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #0078ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-details .like-btn:hover {
+    background-color: #4ac0ff;
+}
+
+/* Improved Comment Form */
+.comment-form {
+    margin-bottom: 30px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: #4ac0ff;
+    outline: none;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Comment Section */
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.comments-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.comments-list li:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.comments-list li p {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.comments-list li strong {
+    color: #4ac0ff;
+}
+
+/* Back to Home Button */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .video-details h2 {
+        font-size: 22px;
+    }
+
+    .video-details .description {
+        font-size: 14px;
+    }
+
+    .video-details .like-btn,
+    .comment-form button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .comments-list li {
+        font-size: 14px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
