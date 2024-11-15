@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-$bego6bm+e@f!1@y@wl==jr1+88&@el4c&&roxyij)=mf%&fb_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'https://streamlite-oaj4.onrender.com', '*']
+ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', 'your-app-name.onrender.com']
+
 
 
 # Application definition
