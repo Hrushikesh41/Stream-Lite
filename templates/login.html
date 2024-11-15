@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Stream Lite</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Stream Lite</h1>
+            <h2>User Login</h2>
+
+            {% if messages %}
+                <div class="messages">
+                    <p>{{ messages|last }}</p>
+                </div>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>
+            </form>
+            
+            <p class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Register here</a></p>
+        </div>
+    </div>
+</body>
+</html>
